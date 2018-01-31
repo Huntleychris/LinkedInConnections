@@ -17,7 +17,7 @@
 --END CATCH
 
 /**********************************************************************************/
-
+drop table If exists  DimDate
 CREATE TABLE	[dbo].[DimDate]
 	(	[DateKey] INT primary key, 
 		[Date] DATETIME,
@@ -63,8 +63,8 @@ GO
 --Specify Start Date and End date here
 --Value of Start Date Must be Less than Your End Date 
 
-DECLARE @StartDate DATETIME = '01/01/2013' --Starting value of Date Range
-DECLARE @EndDate DATETIME = '01/01/2018' --End Value of Date Range
+DECLARE @StartDate DATETIME = '01/01/2006' --Starting value of Date Range
+DECLARE @EndDate DATETIME = '01/01/2019' --End Value of Date Range
 
 --Temporary Variables To Hold the Values During Processing of Each Date of Year
 DECLARE
